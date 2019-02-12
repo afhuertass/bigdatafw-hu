@@ -1,0 +1,27 @@
+class Books():
+    def __init__(self , x ):
+        
+        self.isbn = x[0]
+        self.title = str( x[1] )
+        self.author = str( x[2]) 
+        self.year = int( int( x[3]))
+        self.publisher = str( x[4] )
+        
+        
+class User():
+    def __init__(self , x ):
+        self.user_id =  str( x[0] )
+        self.location =  str( x[1])
+        if x[2] == "NULL":
+
+        	self.age = -1
+        else:
+        	self.age = int( x[2] )
+        
+class Ratings():
+    
+    def __init__( self , x ):
+        
+        self.user_id = str( x[0] )
+        self.isbn =  str( x[1] )
+        self.rating = int( x[2] ) 
